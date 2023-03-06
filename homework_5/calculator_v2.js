@@ -42,13 +42,13 @@ do {
     let radians;
 
     while (isNaN(radians)) {
-      radians = prompt('Radians: ', 0);
+      radians = +prompt('Radians: ', 0);
     }
 
     if (operation === 'sin') {
-      result = Math.sin(+radians);
+      result = Math.sin(radians);
     } else {
-      result = Math.cos(+radians);
+      result = Math.cos(radians);
     }
   } else {
     do {
