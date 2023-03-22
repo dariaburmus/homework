@@ -1,13 +1,12 @@
 const operation = prompt(
-  'Choose operation: ', 
-  'sum, substraction, multiplication, division, pow, sin, cos'
+  'Choose operation: sum, subtraction, multiplication, division, pow, sin, cos'
 );
 
 let result = 0;
 
 if (
   operation === 'sum' ||
-  operation === 'substraction' ||
+  operation === 'subtraction' ||
   operation === 'multiplication' ||
   operation === 'division' ||
   operation === 'pow'
@@ -17,7 +16,7 @@ if (
 
   if (operation === 'sum') {
     result = firstOperand + secondOperand;
-  } else if (operation === 'substraction') {
+  } else if (operation === 'subtraction') {
     result = firstOperand - secondOperand;
   } else if (operation === 'multiplication') {
     result = firstOperand * secondOperand;
