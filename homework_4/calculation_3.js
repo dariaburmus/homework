@@ -1,13 +1,12 @@
 const operation = prompt(
-  'Choose operation: ',
-  'sum, substraction, multiplication, division, pow, sin, cos'
+  'Choose operation: sum, subtraction, multiplication, division, pow, sin, cos'
 );
 
 let result = 0;
 
 switch (operation) {
   case 'sum':
-  case 'substraction':
+  case 'subtraction':
   case 'multiplication':
   case 'division':
   case 'pow':
@@ -18,7 +17,7 @@ switch (operation) {
       case 'sum':
         result = firstOperand + secondOperand;
         break;
-      case 'substraction':
+      case 'subtraction':
         result = firstOperand - secondOperand;
         break;
       case 'multiplication':
