@@ -7,19 +7,23 @@ let history = [];
 do {
   do {
     operation = prompt(
-      'Choose operation: ',
-      'sum, substraction, multiplication, division, pow, sin, cos, history'
+      'Choose operation: sum, subtraction, multiplication, division, pow, sin, cos, history'
     );
   } while (
     operation !== 'sum' &&
-    operation !== 'substraction' &&
+    operation !== 'subtraction' &&
     operation !== 'multiplication' &&
     operation !== 'division' &&
     operation !== 'pow' &&
     operation !== 'sin' &&
     operation !== 'cos' &&
-    operation !== 'history'
+    operation !== 'history' &&
+    operation !== null
   );
+  
+  if (operation === null) {
+    break;
+  }
 
   let firstOperand;
   let secondOperand;
@@ -61,7 +65,7 @@ do {
 
     if (operation === 'sum') {
       result = firstOperand + secondOperand;
-    } else if (operation === 'substraction') {
+    } else if (operation === 'subtraction') {
       result = firstOperand - secondOperand;
     } else if (operation === 'multiplication') {
       result = firstOperand * secondOperand;
