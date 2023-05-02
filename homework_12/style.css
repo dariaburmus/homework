@@ -1,0 +1,55 @@
+input {
+  margin-bottom: 15px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.low {
+  background-color: green;
+}
+
+.mid {
+  background-color: yellow;
+}
+
+.high {
+  background-color: red;
+}
+
+.itemWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.checked > div {
+  text-decoration: line-through;
+}
+
+#createButton {
+  margin-top: 15px;
+}
+
+#removeBtn {
+  border-radius: 5px;
+}
+
+#list {
+  list-style: none;
+}
