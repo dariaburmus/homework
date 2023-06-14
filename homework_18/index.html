@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='style.css' />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class='container'>
+      <div>
+        <span>Users List</span>
+        <div id='users_list'></div>
+        <button id='prev'>Previous</button>
+        <button id='next'>Next</button>
+      </div>
+      <div>
+        <span>New Users List</span>
+        <div id='new_users_list'></div>
+      </div>
+
+      <form id='form'>
+        <label for='first_name'>First name</label>
+        <input required id='first_name' name='first_name' />
+
+        <label for='last_name'>Last name</label>
+        <input required id='last_name' name='last_name' />
+
+        <label for='email'>Email</label>
+        <input required id='email' name='email' />
+
+        <label for='job'>Job</label>
+        <input required id='job' name='job' />
+
+        <label for='avatar'>Avatar</label>
+        <input required id='avatar' name='avatar' />
+
+        <button id='submit' type='submit'>Create user</button>
+      </form>
+    </div>
+
+    <script src='user_list.js'></script>
+  </body>
+</html>

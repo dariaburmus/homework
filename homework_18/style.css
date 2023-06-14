@@ -1,0 +1,26 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 600px;
+}
+
+button {
+  height: 30px;
+  margin-top: 20px;
+  min-width: 200px;
+}
+
+span {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
