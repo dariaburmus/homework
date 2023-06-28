@@ -54,7 +54,6 @@ label {
   overflow: scroll;
   justify-content: space-evenly;
   display: flex;
-  height: 100vh;
 }
 
 #form {
