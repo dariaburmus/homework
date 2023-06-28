@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <label for="email">Email</label>
+        <input id="email" name="email" required />
+        <span id="emailDisclaimer"
+          >Email should be min 3 characters length. Format: user@email.com</span
+        >
+        <span id="emailError" class="hidden"> Wrong email format</span>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+        <span id="passwordDisclaimer"
+          >Password should be minimum 6 characters length</span
+        >
+        <span id="passwordError" class="hidden"
+          >Password less than 6 characters</span
+        >
+
+        <button disabled id="submit" type="submit">Log in</button>
+        <span id="noSuchUserMessage" class="hidden"
+          >No such user or wrong credentials</span
+        >
+      </form>
+
+      <div id="usersListContainer">
+        <div id="allUsers">
+          <span>Users List</span>
+          <div id="usersList"></div>
+          <div id="formControls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+          </div>
+        </div>
+        <div id="newUsersList"></div>
+      </div>
+
+      <div id="formContainer">
+        <form id="userForm">
+          <label for="first_name">First name</label>
+          <input id="first_name" name="first_name" />
+
+          <label for="last_name">Last name</label>
+          <input id="last_name" name="last_name" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" />
+
+          <label for="job">Job</label>
+          <input id="job" name="job" />
+
+          <label for="avatar">Avatar</label>
+          <input id="avatar" name="avatar" />
+
+          <button id="submit" type="submit">Create user</button>
+        </form>
+
+        <form id="editUserForm">
+          <label for="id">User Id to change</label>
+          <input required id="id" name="id" />
+
+          <label for="first_name">First name</label>
+          <input required id="first_name" name="first_name" />
+
+          <label for="last_name">Last Name</label>
+          <input id="last_name" name="last_name" />
+
+          <label for="avatar">Avatar</label>
+          <input required id="avatar" name="avatar" />
+          <button type="submit" id="submit">Edit user</button>
+        </form>
+      </div>
+    </div>
+    <script src="fetch.js"></script>
+  </body>
+</html>
