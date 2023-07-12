@@ -1,20 +1,20 @@
-const usersList = document.getElementById("usersList");
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
+const usersList = document.getElementById('usersList');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
 
 let pageNumber = 1;
 
 function showUsers(users, root) {
-  root.innerHTML = "";
+  root.innerHTML = '';
 
   users.forEach((user) => {
-    const nameEl = document.createElement("p");
+    const nameEl = document.createElement('p');
     nameEl.innerText = `${user.first_name} ${user.last_name}`;
 
-    const avatarEl = document.createElement("img");
+    const avatarEl = document.createElement('img');
     avatarEl.src = user.avatar;
 
-    const container = document.createElement("div");
+    const container = document.createElement('div');
     container.append(nameEl, avatarEl);
 
     root.appendChild(container);
@@ -47,10 +47,10 @@ const getUsers = async (pageNumber) => {
 
 getUsers(pageNumber);
 
-nextButton.addEventListener("click", () => {
+nextButton.addEventListener('click', () => {
   getUsers(++pageNumber);
 });
 
-prevButton.addEventListener("click", () => {
+prevButton.addEventListener('click', () => {
   getUsers(--pageNumber);
 });

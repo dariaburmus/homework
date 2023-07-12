@@ -1,0 +1,1 @@
+import{showElement,hideElement}from"./domUtils.js";const userListContainer=document.getElementById("usersListContainer"),forms=document.getElementById("formContainer"),showProtectedElements=()=>{showElement(forms),showElement(userListContainer)},hideProtectedElements=()=>{hideElement(forms),hideElement(userListContainer)};export{showProtectedElements,hideProtectedElements};

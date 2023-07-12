@@ -1,0 +1,1 @@
+const hideElement=e=>{e.style.display="none"},showElement=e=>{e.style.display="flex"};export{hideElement,showElement};

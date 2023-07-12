@@ -1,0 +1,1 @@
+const getAuthToken=()=>localStorage.getItem("authToken"),isLoggedIn=()=>{return!!getAuthToken()},setAuthToken=e=>{e&&localStorage.setItem("authToken",e)},clearToken=()=>{localStorage.removeItem("authToken")};export{getAuthToken,isLoggedIn,setAuthToken,clearToken};
