@@ -1,0 +1,15 @@
+.navContainer {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.navItem {
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
